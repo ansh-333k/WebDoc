@@ -1,6 +1,6 @@
 # Interactive Learning Doc
 
-Turn a book PDF into an interactive, **source-grounded** study workspace — entirely in your browser. The **full original text is preserved**; alongside it the AI adds a study layer: **key points**, **key concepts** with inline links + backlinks, **comprehension quizzes**, **math/LaTeX rendering** (KaTeX), and an **Obsidian-style concept network** (a **draggable** force-directed graph). Full-screen layout: a sidebar (outline + concepts + actions) and a wide reading area showing the text and a study rail side by side. You choose your **provider (OpenAI / Gemini), model, and key** — the key stays in your browser.
+Turn a book PDF into an interactive, **source-grounded** study workspace — entirely in your browser. The **full original text is preserved**; alongside it the AI adds a study layer: **key points**, **key concepts** with inline links + backlinks, **comprehension quizzes**, **math/LaTeX rendering** (KaTeX), and an **Obsidian-style concept network** (a **draggable** force-directed graph). Three-pane, **fully responsive** layout (phone / tablet / desktop): a sidebar (contents + concepts + actions), the original book in the centre, and the AI study rail on the right. **Figures and tables are preserved** — each section links to the original **page image**, so anything text extraction can't capture is never lost. You choose your **provider (OpenAI / Gemini), model, and key** — the key stays in your browser. The built-in sample is a standard accounting chapter (NCERT "Accounting for Partnership: Basic Concepts").
 
 No backend. No server. Nothing is uploaded anywhere except the calls your browser makes directly to the AI provider you choose, using your own key.
 
@@ -20,6 +20,7 @@ Then read the full text with highlights and concept links, use the per-section s
 ## How it protects the source
 
 - **No content lost** — the complete original text of every section is shown, unchanged; the AI only adds a study layer beside it.
+- **Images & tables preserved** — every section links to the original **page image** (rendered from the PDF), so figures and tables that text extraction can't reproduce are kept intact.
 - **Grounded highlights & study layer** — every key point, concept, and quiz quotes an exact substring of the source (used both to highlight the sentence and to verify grounding); anything not found in the source is dropped.
 - **Strict verify (on)** — a second AI pass drops any claim not supported by its source span.
 - **Provenance** — concepts are badged “from the book” vs “general knowledge”.
