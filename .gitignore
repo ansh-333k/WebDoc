@@ -1,0 +1,13 @@
+# Local test / scaffolding artifacts — not needed to host the site
+book.pdf
+book.txt
+chunks.json
+book.interactive.json
+preview.html
+render.png
+demo.png
+chrome.err
+chrome2.err
+build.py
+generate_preview.py
+inject_demo.py
