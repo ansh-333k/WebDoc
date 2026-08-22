@@ -11,3 +11,13 @@ chrome2.err
 build.py
 generate_preview.py
 inject_demo.py
+
+# more local test artifacts
+test_math.html
+reader.png
+graph.png
+graph2.png
+math.png
+summary.png
+demo2.png
+build2.py
