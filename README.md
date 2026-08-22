@@ -1,6 +1,6 @@
 # Interactive Learning Doc
 
-Turn a book PDF into an interactive, **source-grounded** learning document — entirely in your browser. The only input is a **PDF**: it surfaces the **important points** as an interactive summary — with the **original wording preserved verbatim for the things that matter** (definitions, rules, key figures), key terms, comprehension checks, **math/LaTeX rendering** (via KaTeX), and an **Obsidian-style concept network** (inline concept links with backlinks, plus a **draggable** force-directed graph view). One-time: paste your own Gemini or OpenAI key (auto-detected, saved in your browser); after that it's just drop-a-PDF.
+Turn a book PDF into an interactive, **source-grounded** study workspace — entirely in your browser. The **full original text is preserved**; alongside it the AI adds a study layer: **key points**, **key concepts** with inline links + backlinks, **comprehension quizzes**, **math/LaTeX rendering** (KaTeX), and an **Obsidian-style concept network** (a **draggable** force-directed graph). Full-screen layout: a sidebar (outline + concepts + actions) and a wide reading area showing the text and a study rail side by side. You choose your **provider (OpenAI / Gemini), model, and key** — the key stays in your browser.
 
 No backend. No server. Nothing is uploaded anywhere except the calls your browser makes directly to the AI provider you choose, using your own key.
 
@@ -10,20 +10,19 @@ Open the page and click **“Open a sample interactive doc (no API key)”**, or
 
 ## Use it on your own book
 
-1. **First time only:** paste your OpenAI (`sk-…`) or Gemini (`AIza…`) key — the provider is auto-detected and the key is saved in your browser.
-2. **Drop a PDF** (or click to choose). That's the only input — provider, model, chunking, summary depth, and verification are all automatic.
+1. Pick your **provider** (ChatGPT / OpenAI or Gemini), paste your **API key**, and choose a **model** (click *Load my models* to list them from your account).
+2. **Drop a PDF** (or click to choose).
 
-Then read the summary, click concept links to see where each idea recurs, or open **Graph** for the network view.
+Then read the full text with highlights and concept links, use the per-section study rail (key points, concepts, quizzes), click a concept for its backlinks, or open **Graph** for the draggable network.
 
 **Bring a book you have the rights to** (official / public-domain / your own). Don’t upload documents containing personal identifiers (e.g. Aadhaar, PAN, full bank-account numbers) — the text is sent to your chosen AI provider.
 
 ## How it protects the source
 
-- **Summarised, not rewritten wholesale** — the reader shows the important points, not the full body text.
-- **Original wording preserved for what matters** — important points (definitions, rules, exact figures) are shown **verbatim in quotes**, cited to the page; other points have a “show original” toggle.
-- **Grounding gate** — every point, definition, and quiz must quote an exact substring of the source, or it is dropped.
-- **Strict verify (optional)** — a second AI pass drops any claim not supported by its source span.
-- **Provenance** — definitions are badged “from the book” vs “general knowledge”; quizzes cite their source span.
+- **No content lost** — the complete original text of every section is shown, unchanged; the AI only adds a study layer beside it.
+- **Grounded highlights & study layer** — every key point, concept, and quiz quotes an exact substring of the source (used both to highlight the sentence and to verify grounding); anything not found in the source is dropped.
+- **Strict verify (on)** — a second AI pass drops any claim not supported by its source span.
+- **Provenance** — concepts are badged “from the book” vs “general knowledge”.
 
 ## Deploy to GitHub Pages
 
