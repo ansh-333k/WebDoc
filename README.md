@@ -1,6 +1,6 @@
 # Interactive Learning Doc
 
-Turn a book PDF into an interactive, **source-grounded** learning document — entirely in your browser. Upload a PDF, use your own Gemini or OpenAI API key, and get a reader that surfaces the **important points** as an interactive summary — with the **original wording preserved verbatim for the things that matter** (definitions, rules, key figures), plus key terms and comprehension checks.
+Turn a book PDF into an interactive, **source-grounded** learning document — entirely in your browser. The only input is a **PDF**: it surfaces the **important points** as an interactive summary — with the **original wording preserved verbatim for the things that matter** (definitions, rules, key figures), key terms, comprehension checks, and an **Obsidian-style concept network** (inline concept links with backlinks, plus a force-directed graph view). One-time: paste your own Gemini or OpenAI key (auto-detected, saved in your browser); after that it's just drop-a-PDF.
 
 No backend. No server. Nothing is uploaded anywhere except the calls your browser makes directly to the AI provider you choose, using your own key.
 
@@ -10,10 +10,10 @@ Open the page and click **“Open a sample interactive doc (no API key)”**, or
 
 ## Use it on your own book
 
-1. Choose a provider (ChatGPT / OpenAI or Gemini).
-2. Paste your API key (it stays in your browser).
-3. Pick a model (the list is fetched from your account).
-4. Upload a PDF and generate.
+1. **First time only:** paste your OpenAI (`sk-…`) or Gemini (`AIza…`) key — the provider is auto-detected and the key is saved in your browser.
+2. **Drop a PDF** (or click to choose). That's the only input — provider, model, chunking, summary depth, and verification are all automatic.
+
+Then read the summary, click concept links to see where each idea recurs, or open **Graph** for the network view.
 
 **Bring a book you have the rights to** (official / public-domain / your own). Don’t upload documents containing personal identifiers (e.g. Aadhaar, PAN, full bank-account numbers) — the text is sent to your chosen AI provider.
 
