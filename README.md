@@ -1,6 +1,6 @@
 # Interactive Learning Doc
 
-Turn a book PDF into an interactive, **source-preserving** learning document — entirely in your browser. Upload a PDF, use your own Gemini or OpenAI API key, and get a reader with inline definitions, comprehension checks, and plain-language notes layered on top of the **original text (kept verbatim, in full)**.
+Turn a book PDF into an interactive, **source-grounded** learning document — entirely in your browser. Upload a PDF, use your own Gemini or OpenAI API key, and get a reader that surfaces the **important points** as an interactive summary — with the **original wording preserved verbatim for the things that matter** (definitions, rules, key figures), plus key terms and comprehension checks.
 
 No backend. No server. Nothing is uploaded anywhere except the calls your browser makes directly to the AI provider you choose, using your own key.
 
@@ -19,9 +19,9 @@ Open the page and click **“Open a sample interactive doc (no API key)”**, or
 
 ## How it protects the source
 
-- **Originality preserved** — the model never rewrites the book; it only adds a labelled overlay. The original text is displayed verbatim and in full.
-- **No detail lost** — every section is shown; sections beyond the cost cap appear as plain text.
-- **Grounding gate** — every AI item must quote an exact substring of the source, or it is dropped.
+- **Summarised, not rewritten wholesale** — the reader shows the important points, not the full body text.
+- **Original wording preserved for what matters** — important points (definitions, rules, exact figures) are shown **verbatim in quotes**, cited to the page; other points have a “show original” toggle.
+- **Grounding gate** — every point, definition, and quiz must quote an exact substring of the source, or it is dropped.
 - **Strict verify (optional)** — a second AI pass drops any claim not supported by its source span.
 - **Provenance** — definitions are badged “from the book” vs “general knowledge”; quizzes cite their source span.
 
